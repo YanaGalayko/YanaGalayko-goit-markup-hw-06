@@ -350,11 +350,33 @@
           </li>
         </ul>
       </div>
+      <div class="footer-container">
+        <p class="footer-subscribe">Subscribe</p>
+        <form class="footer-form">
+          <div class="footer-form-container">
+          <label class="footer-label">
+          <input 
+          type="email" 
+          name="user_mail" 
+          class="footer-input" 
+          required 
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          minlength="2"
+          placeholder="Email">
+        </label>
+        <button type="submit" class="footer-buttom">Subscribe
+        <svg class="footer-form-svg" width="24" height="24">
+          <use class="footer-form-use" href="./images/icons.svg#icon-footer"></use>
+        </svg>
+      </button>
+       </div>
+       </form>
+      </div>
     </div>
       </div>
     </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal-btn" data-modal-close>
     <svg class="modal-btn-svg" width="8" height="8" >
