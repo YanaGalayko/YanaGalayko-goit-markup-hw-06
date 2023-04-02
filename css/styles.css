@@ -20,6 +20,16 @@ h1, h2, h3, p {
     padding: 0;
 }
 
+span {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -508,9 +518,6 @@ body {
     fill: #404BBF;
 }
 
-
-
-
             /* footer */
 
 .footer {
@@ -521,8 +528,7 @@ body {
 }
 
 .container-footer {
-    display: flex;
-    
+    display: flex;  
 }
 
 .footer-text {
@@ -662,6 +668,7 @@ body {
     height: 584px;
     background-color: #FCFCFC;
     padding: 72px 24px 24px 24px;
+    border-radius: 4px;
 }
 
 .modal-btn {
@@ -698,25 +705,23 @@ body {
 
             /* modal form */
 
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}   
+  
 
 .modal-title {
     font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
     color: #2E2F42;
     margin-bottom: 16px;
+    letter-spacing: 0.02em;
 }
 
 .modal-form-label {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 8px;
+    outline: 1px solid #31D0AA;
 }
 
 .modal-form-text {
@@ -758,7 +763,6 @@ body {
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
     background-color: transparent;
-    margin-bottom: 0;
 }
 
 .modal-checkbox {
@@ -799,7 +803,6 @@ body {
 .modal-form-wraper {
     display: block;
     position: relative;
-    margin-bottom: 8px;
 }
 
 .modal-form-svg {
@@ -821,15 +824,23 @@ body {
 
 .modal-button {
     display: block;
-    cursor: pointer;
     color: #FFFFFF;
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 16px 32px 16px 32px;
+    cursor: pointer;
     width: 169px;
     height: 56px;
-    margin: auto;   
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: auto;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #404BBF
 }
 
 .modal-svg {
